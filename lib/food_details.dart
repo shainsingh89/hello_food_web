@@ -1,8 +1,6 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_rating/flutter_rating.dart';
+import 'package:flutter_web/cupertino.dart';
+import 'package:flutter_web/material.dart';
+//import 'package:flutter_rating/flutter_rating.dart';
 
 import 'main.dart';
 
@@ -83,7 +81,7 @@ class _MyPageState extends State<FoodScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       new Row(children: <Widget>[
-                        Padding(
+                        /*Padding(
                             padding: EdgeInsets.only(
                               left: 10.0,
                             ),
@@ -93,7 +91,7 @@ class _MyPageState extends State<FoodScreen> {
                               color: Colors.orange,
                               borderColor: Colors.grey,
                               starCount: 5,
-                            )),
+                            )),*/
                         Padding(
                             padding: EdgeInsets.only(
                               left: 10.0,

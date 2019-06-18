@@ -1,8 +1,7 @@
-import 'dart:ui';
+//import 'package:flutter_rating/flutter_rating.dart';
+import 'package:flutter_web/cupertino.dart';
+import 'package:flutter_web/material.dart';
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_rating/flutter_rating.dart';
 
 import 'food_details.dart';
 import 'main.dart';
@@ -12,7 +11,6 @@ BottomNavigationBar _bottomNavigationBar() {
 
   return BottomNavigationBar(
     currentIndex: 0, // this will be set when a new tab is tapped
-    elevation: 0.0,
     items: [
       BottomNavigationBarItem(
         icon: new Icon(Icons.home, color: HexColor(primaryColor)),
@@ -63,6 +61,10 @@ class _MyHomePageState extends State<HomeScreen> {
     double deviceHeight = queryData.size.height;
     double viganFoodCardImageSize =(deviceHeight * (24 / 100.0));
 
+    var textStyle = new TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black);
     return new Scaffold(
         bottomNavigationBar: _bottomNavigationBar(),
         body: SingleChildScrollView(
@@ -107,10 +109,7 @@ class _MyHomePageState extends State<HomeScreen> {
                     child: Text(
                       "Happy Vegan Life",
                       textAlign: TextAlign.left,
-                      style: new TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.black),
+                      style: textStyle,
                     ),
                   )),
               SizedBox(height: 5.0),
@@ -254,7 +253,7 @@ class _MyHomePageState extends State<HomeScreen> {
                         child: Text(title),
                       ),
                     ),
-                    Row(
+                    /*Row(
                       children: <Widget>[
                         Container(
                             alignment: Alignment.centerLeft,
@@ -269,7 +268,7 @@ class _MyHomePageState extends State<HomeScreen> {
                               ),
                             ))
                       ],
-                    )
+                    )*/
                   ],
                 )
               ],
