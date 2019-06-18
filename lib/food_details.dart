@@ -33,7 +33,7 @@ class _MyPageState extends State<FoodScreen> {
                       centerTitle: true,
                       collapseMode: CollapseMode.pin,
                       background: Image.asset(
-                        'assets/images/egg_benedict.jpeg',
+                        'images/egg_benedict.jpeg',
                         fit: BoxFit.cover,
                       )),
                 ),

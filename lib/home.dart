@@ -161,7 +161,7 @@ class _MyHomePageState extends State<HomeScreen> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15.0),
                       image: DecorationImage(
-                          image: AssetImage('assets/images/' + imageName),
+                          image: AssetImage('images/' + imageName),
                           fit: BoxFit.cover)),
                   /*child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 1.5, sigmaY: 1.5),*/
@@ -238,7 +238,7 @@ class _MyHomePageState extends State<HomeScreen> {
                                   topLeft: Radius.circular(5.0)),
                               image: DecorationImage(
                                   image:
-                                      AssetImage('assets/images/' + imageName),
+                                      AssetImage('images/' + imageName),
                                   fit: BoxFit.fill)),
                           child: Container(
                             decoration: BoxDecoration(

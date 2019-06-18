@@ -25,7 +25,7 @@ class _MyHomePageState extends State<Login> {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.only(top: 0.0),
-                      child: Image.asset("assets/images/login.jpeg"),
+                      child: Image.asset("images/login.jpeg"),
                     ),
                   ],
                 ),
